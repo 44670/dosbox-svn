@@ -591,7 +591,7 @@ struct retro_variable vars[] = {
     { "dosbox_svn_save_overlay",            "Redirect writes to save directory (restart)(experimental); disable|enable" },
     { "dosbox_svn_machine_type",            "Emulated machine (restart); svga_s3|svga_et3000|svga_et4000|svga_paradise|vesa_nolfb|vesa_oldvbe|hercules|cga|tandy|pcjr|ega|vgaonly" },
     { "dosbox_svn_memory_size",             "Memory size (restart); 16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52|53|54|55|56|57|58|59|60|61|62|63|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15" },
-#if defined(C_DYNREC) || defined(C_DYNAMIC_X86)
+    #if defined(C_DYNREC) || defined(C_DYNAMIC_X86)
     { "dosbox_svn_cpu_core",                "CPU core; auto|dynamic|normal|simple" },
 #else
     { "dosbox_svn_cpu_core",                "CPU core; auto|normal|simple" },
@@ -612,6 +612,7 @@ struct retro_variable vars[] = {
 };
 
 struct retro_variable vars_advanced[] = {
+
     { "dosbox_svn_use_options",             "Enable core-options (restart); true|false"},
     { "dosbox_svn_adv_options",             "Enable advanced core-options (restart); false|true"},
     { "dosbox_svn_save_overlay",            "Redirect writes to save directory (restart)(experimental); disable|enable" },
